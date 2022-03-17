@@ -1,15 +1,13 @@
 *** Settings ***
 Documentation       This documentation is related to emergency contact
 Resource        ../Resource/Base/CommonFunctionality.resource
+Library     DataDriver      file=../Test_Data/Framework_Orange.xlsx     sheet=AddEmergencyContact
 Test Setup      Launch Browser
 Test Teardown   Close Browser
-
 Test Template       Verify Add Emergency Contact
 
 *** Test Cases ***
-
-TC1     Admin        admin123       Ananda      Brother     78988
-
+TC1
 
 *** Keywords ***
 Verify Add Emergency Contact
