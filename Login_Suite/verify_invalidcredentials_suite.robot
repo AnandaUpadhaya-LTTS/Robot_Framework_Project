@@ -4,11 +4,12 @@ Documentation       This suite will handle all the test cases related to invalid
 
 Resource        ../Resource/Base/CommonFunctionality.resource
 
+Test Setup      Launch Browser
 Test Teardown   Close Browser
 
 *** Test Cases ***
 Verify InValid Credential Test
-        Launch Browser
+
         Input Text    id=txtUsername    Adminabc
         Input Password    id=txtPassword    admin123456
         Click Button    id=btnLogin
