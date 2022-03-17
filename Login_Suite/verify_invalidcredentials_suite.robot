@@ -12,8 +12,6 @@ Verify InValid Credential Test
         Input Text    id=txtUsername    Adminabc
         Input Password    id=txtPassword    admin123456
         Click Button    id=btnLogin
-        #Page Should Contain    My Info
-        #Click Element    id=welcome
-        #Click Element    Link=Logout
         Page Should Contain Element    id=spanMessage
+        Element Text Should Be    id=spanMessage    Invalid credentials
         Close Browser
