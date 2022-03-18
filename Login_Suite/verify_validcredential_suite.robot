@@ -13,7 +13,9 @@ Verify Valid Credential Test
         Input Password    id=txtPassword    admin123
         Click Button    id=btnLogin
         Page Should Contain    My Info
-        #Click Element    id=welcome
-        #Click Element    Link=Logout
+        Set Screenshot Directory    ${EXECDIR}${/}Screenshot
         Close Browser
+        #To give browser_name as input in cmd
+        # robot -v BROWSER_NAME:chrome .\Login_Suite\verify_validcredential_suite.robot
+
 

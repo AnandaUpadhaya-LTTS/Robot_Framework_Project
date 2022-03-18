@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       This documentation is related to Verify Membership
 Resource        ../Resource/Base/CommonFunctionality.resource
-Library     DataDriver      file=../Test_Data/Framework_Orange.xlsx     sheet=AddMembership
+Library     DataDriver      file=../Test_Data/Framework_Orange.xlsx     sheet=AddMembership_new
 Test Setup      Launch Browser
 Test Teardown   Close Browser
 Test Template       Verify Add Membership
@@ -18,7 +18,7 @@ Verify Add Membership
         Click Element    link=My Info
         Click Element    Link=Memberships
         Click Element    xpath=//*[@id='btnAddMembershipDetail']
-        Select From List By Value    id=membership_membership       ${membership}
+        Select From List By Label    id=membership_membership       ${membership}
         Select From List By Value    id=membership_subscriptionPaidBy       ${paid_by}
         Input Text    id=membership_subscriptionAmount    ${amount}
         Select From List By Value    id=membership_currency       INR
