@@ -3,7 +3,6 @@ Documentation       This suite will handle all the test cases related to invalid
 ...     credential test. Test case -TC_OH_3
 
 Resource        ../Resource/Base/CommonFunctionality.resource
-
 Test Setup      Launch Browser
 Test Teardown   Close Browser
 
