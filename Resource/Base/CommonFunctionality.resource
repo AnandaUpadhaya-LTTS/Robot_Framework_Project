@@ -4,7 +4,7 @@ Documentation       This file handles browser configuration, reuseable scripts.
 Library     SeleniumLibrary
 
 *** Variables ***
-${BROWSER_NAME}     edge
+${BROWSER_NAME}     chrome
 ${URL}      https://opensource-demo.orangehrmlive.com/
 
 *** Keywords ***
